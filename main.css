@@ -1,0 +1,11 @@
+.btnGroup button{
+	width:100px;
+	height:30px;
+	line-height: 30px;
+	border:none;
+	color:#fff;
+	font-family: "微软雅黑";
+	background: #666;
+	margin-top:20px;
+	margin-left:20px;
+}

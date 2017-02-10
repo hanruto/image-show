@@ -1,0 +1,46 @@
+body{
+	margin:0;
+	padding: 0;
+	background: #eee;
+	transition:all ease 0.6s;
+	transform-style: preserve-3d;
+	
+}
+#container{
+	position: relative;
+	
+}
+.show-item{
+	position: absolute;
+	transition: all ease 0.6s;
+}
+.show-item img{
+	width:200px;
+	display: block;
+	height: 140px;
+
+	backface-visibility: hidden;
+
+}
+.show-item div{
+	background: #fff;
+	text-align: center;
+	height: 24px;
+	line-height: 24px;
+	font-family: "微软雅黑";
+	color:#666;
+	backface-visibility: hidden;
+}
+.turn{
+	width:160px;
+	perspective: 2000px;
+	transform-style: preserve-3d;
+	transform:rotateX(3deg) rotateY(0deg) translateY(100px) translateZ(-200px);
+	transition:all ease 0.2s;
+}
+.turn .show-item-turn{
+	border:10px solid #fff;
+	box-shadow:0 0 20px #444;
+	border-bottom: 10px solid #fff;
+	top:200px;	
+}

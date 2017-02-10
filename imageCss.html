@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="imageCss.css">
+	<link rel="stylesheet" href="main.css">
+	<script src="jquery-1.11.3.js"></script>
+</head>
+<body>
+	<div id="container">
+	
+	</div>
+	<div class="btnGroup">
+		<button class="random">打乱</button>
+		<button class="stack">叠放</button>
+		<button class="focus">轮播</button>
+		<button class="vetical">圆环</button>
+		<button class="horrible">横放</button>
+		<button class="rehearse">阵列</button>
+	</div>
+	<script src="imageCss.js"></script>`
+</body>
+<script>
+	var showCfg=[
+		{imgSrc:"images/1.jpeg",text:"1",backText:"hello"},
+		{imgSrc:"images/3.jpeg",text:"2",backText:"Miss"},
+		{imgSrc:"images/4.jpeg",text:"3",backText:"LI"},
+		{imgSrc:"images/5.jpeg",text:"4",backText:"Na"},
+		{imgSrc:"images/6.jpeg",text:"5",backText:"Na"},
+		{imgSrc:"images/7.jpeg",text:"6",backText:"But"},
+		{imgSrc:"images/8.jpeg",text:"7",backText:"So"},
+		{imgSrc:"images/9.jpeg",text:"8",backText:"Sorry"},
+		{imgSrc:"images/10.jpeg",text:"9",backText:"I wana give you happy"},
+		
+	]
+var show = new ShowImg(showCfg,"turn",container);
+show.initial()
+</script>
+</html>
